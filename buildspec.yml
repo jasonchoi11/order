@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "admin19-order"
+    _PROJECT_NAME: "admin19-sk-order"
 
 phases:
   install:
