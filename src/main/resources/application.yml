@@ -59,10 +59,10 @@ spring:
       bindings:
         event-in:
           group: Order
-          destination: rental1
+          destination: rentals
           contentType: application/json
         event-out:
-          destination: rental1
+          destination: rentals
           contentType: application/json
           
 
