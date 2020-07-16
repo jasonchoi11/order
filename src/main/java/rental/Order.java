@@ -24,13 +24,13 @@ public class Order {
     public void onPostPersist(){
 
         //결재 요청 후 kafka
-//        Payment payment = new Payment();
-//        payment.setOrderId(getId());
-//        payment.setRentalPrice(getRentalPrice());
-//        payment.setStatus("승인요청");
-//        payment.setApprovalDate(getContractDate());
-//        OrderApplication.applicationContext.getBean(PaymentService.class)
-//            .approval(payment);
+        Payment payment = new Payment();
+        payment.setOrderId(getId());
+        payment.setRentalPrice(getRentalPrice());
+        payment.setStatus("승인요청");
+        payment.setApprovalDate(getContractDate());
+        OrderApplication.applicationContext.getBean(PaymentService.class)
+            .approval(payment);
 
         Ordered ordered = new Ordered();
         BeanUtils.copyProperties(this, ordered);
