@@ -19,6 +19,7 @@ public class OrderState {
         private String checkDate;
         private String checkStatus;
         private Long productId;
+        private Integer score;
 
 
         public Long getId() {
@@ -91,5 +92,12 @@ public class OrderState {
         public void setProductId(Long productId) {
             this.productId = productId;
         }
+        public Integer getScore() {
+        return score;
+    }
+
+         public void setScore(Integer score) {
+        this.score = score;
+    }
 
 }

@@ -7,6 +7,7 @@ public class Checked extends AbstractEvent {
     private Long orderId;
     private String checkDate;
     private String status;
+    private Integer score;
 
     public Long getId() {
         return id;
@@ -35,5 +36,13 @@ public class Checked extends AbstractEvent {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
     }
 }
