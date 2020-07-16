@@ -38,15 +38,7 @@ logging:
 server:
   port: 8081
 
-feign:
-  hystrix:
-    enabled: true
 
-hystrix:
-  command:
-    # 전역설정
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610
 ---
 
 spring:
@@ -73,12 +65,4 @@ spring:
           destination: rental1
           contentType: application/json
           
-feign:
-  hystrix:
-    enabled: true
 
-hystrix:
-  command:
-    # 전역설정
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610          
